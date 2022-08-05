@@ -66,8 +66,3 @@ def func(vid_path):
   vid.release()
   output.release()
   print("vid released")
-  return '/content/output.mp4'
-
-import gradio as gr
-v=gr.Interface(func,gr.Video(),"playable_video")
-v.launch(debug=True)
