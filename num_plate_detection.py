@@ -42,7 +42,7 @@ import matplotlib.pyplot as plt
 # %matplotlib inline
 import numpy as np
 import pandas as pd
-model = torch.hub.load('ultralytics/yolov5', 'custom' ,'/content/best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom' ,'/content/Vehicle_number_plate_detection/best.pt')
 def func(vid_path):
   vid=cv2.VideoCapture(vid_path)
   output = cv2.VideoWriter('/content/output.mp4', cv2.VideoWriter_fourcc(*'XVID'), 20, (int(vid.get(3)),int(vid.get(4))))
